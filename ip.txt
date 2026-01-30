@@ -1,19 +1,2 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <button onclick="toonIP()">Toon mijn IP</button>
-  <p id="ip"></p>
 
-  <script>
-    function toonIP() {
-      fetch("https://api.ipify.org?format=json")
-        .then(res => res.json())
-        .then(data => {
-          document.getElementById("ip").innerText =
-            "Jouw IP-adres is: " + data.ip;
-        });
-    }
-  </script>
-</body>
-</html>
 
